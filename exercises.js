@@ -1,3 +1,5 @@
+
+  
 /* #doubleArray
  *
  * Takes in an array of numbers and returns an array with each element doubled
@@ -12,6 +14,8 @@ var doubleArray = function(arr) {
   }
   return result
 }
+doubleArray([1,2,3]);
+
 
 /* #sumArrays
  *
@@ -370,8 +374,8 @@ var tupleConvertToObject;
 
 
 module.exports = {
-  doubleArray: null,
-  sumArrays: null, 
+  doubleArray: doubleArray,
+  sumArrays: sumArrays, 
   stringCount: null,
   arrayLength: null,
   countAll: null,
