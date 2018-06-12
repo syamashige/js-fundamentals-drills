@@ -312,7 +312,10 @@ var makeObject = function (a, b) {
  * @param {String}
  * @return {Bool}
  */
-var makeObjectReverse;
+var makeObjectReverse = function (a,b) {
+
+  
+}
 
 /* #tupleToObject
  *
@@ -339,7 +342,13 @@ var tupleToObjectReverse;
  * @param {Array}
  * @return {Object}
  */
-var strToKeys;
+var strToKeys = function(arr) {
+  var newObj = {};
+  for (var i = 0; i < arr.length; i++) {
+      newObj.arr[i] = 0;
+    }
+  return newObj;
+}
 
 /* #getValues
  *
@@ -492,10 +501,10 @@ module.exports = {
   getObjectKeys: getObjectKeys,
   getObjectValues: getObjectValues,
   makeObject: makeObject,
-  makeObjectReverse: null,
+  makeObjectReverse: makeObjectReverse,
   tupleToObject: null,
   tupleToObjectReverse: null,
-  strToKeys: null,
+  strToKeys: strToKeys,
   getValues: null,
   getKeys: null,
   objectToArray: null,
