@@ -92,7 +92,15 @@ var countStrings = function(arr) {
  * @param {String}
  * @return {Number}
  */
-var countAllStrings;
+var countAllStrings = function(str) {
+  var lengthOfString = [];
+  var sumOfStrings = 0;
+  for (var i = 0; i <str.length; i++) {
+    lengthOfString.push(str[i].length);
+    sumOfStrings += lengthOfString[i];
+  }
+  return sumOfStrings;
+}
 
 /* #convertToArray
  *
@@ -402,7 +410,7 @@ module.exports = {
   arrayLength: arrayLength,
   countAll: countAll, 
   countStrings: countStrings,
-  countAllStrings: null,
+  countAllStrings: countAllStrings,
   convertToArray: null,
   objectSize: null,
   createZeroFilledArray: null,
