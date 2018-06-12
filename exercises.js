@@ -246,7 +246,15 @@ var sumAllPositive = function(str) {
  * @param {Array}
  * @return {Number}
  */
-var stringCountBelowThree;
+var stringCountBelowThree = function(arr) {
+  var numOfStrings = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if(arr[i].length <= 3) {
+      numOfStrings += 1;
+    }
+  }
+  return numOfStrings;
+}
 
 /* #countObjects
  *
@@ -468,7 +476,7 @@ module.exports = {
   moreThanTenLetters: moreThanTenLetters,
   multiplyAll: multiplyAll,
   sumAllPositive: sumAllPositive,
-  stringCountBelowThree: null,
+  stringCountBelowThree: stringCountBelowThree,
   countObjects: null,
   getObjectKeys: null,
   getObjectValues: null,
