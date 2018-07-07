@@ -146,7 +146,10 @@ var createZeroFilledArray = function (num) {
  * @param {Array}
  * @return {Array}
  */
-var poppedArray;
+var poppedArray = function (arr) {
+  arr.pop();
+  return arr;
+}
 
 /* #splitString
  *
