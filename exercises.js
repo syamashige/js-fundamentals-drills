@@ -288,7 +288,9 @@ var getObjectKeys = function (obj) {
  * @param {Object}
  * @return {Array}
  */
-var getObjectValues;
+var getObjectValues = function (obj) {
+  return Object.values(obj);
+}
 
 /* #makeObject
  *
