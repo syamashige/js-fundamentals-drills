@@ -300,7 +300,10 @@ var getObjectValues = function (obj) {
  * @param {String}
  * @return {Object}
  */
-var makeObject;
+var makeObject = function (str1, str2) {
+  var newObj = {[str1]: str2};
+  return newObj;
+}
 
 /* #makeObjectReverse
  *
