@@ -9,7 +9,7 @@
  */
 var doubleArray = function (arr) {
   var result = [];
-  for (var i = 0; i<arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     result.push(arr[i]*2);
   }
   return result;
@@ -26,7 +26,7 @@ var doubleArray = function (arr) {
  */
 var sumArrays = function(arr1 , arr2) {
     var sum = 0;
-    for (var i = 0; i<arr2.length; i++) {
+    for (var i = 0; i < arr2.length; i++) {
       sum += (arr1[i] + arr2[i]);
     }
     return sum;
@@ -63,7 +63,10 @@ var arrayLength = function (arr) {
  */
 var countAll = function (arr) {
   var sum = 0;
-  
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 }
 
 /* #countStrings
