@@ -121,7 +121,10 @@ var convertToArray = function (obj) {
  * @return {Number}
  */
 
-var objectSize;
+var objectSize = function (obj) {
+  var valuePairs = Object.keys(obj).length;
+  return valuePairs;
+}
 
 
 /* #createZeroFilledArray
