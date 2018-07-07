@@ -170,7 +170,10 @@ var splitString = function (str) {
  * @param {String}
  * @return {Number}
  */
-var lengthOfLast;
+var lengthOfLast = function (str) {
+  var lastLength = str.pop().length;
+  return lastLength;
+}
 
 
 /* #sumBelowTen
