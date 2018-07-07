@@ -266,7 +266,9 @@ return stringsBelowThree;
  * @param {Array}
  * @return {Number}
  */
-var countObjects;
+var countObjects = function (arr) {
+  return arr.length;
+}
 
 /* #getObjectKeys
  *
