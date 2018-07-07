@@ -91,7 +91,15 @@ var countStrings = function (arr) {
  * @param {String}
  * @return {Number}
  */
-var countAllStrings;
+var countAllStrings = function (str) {
+  var newArr = [];
+  var sum = 0;
+  for (var i = 0; i < str.length; i++) {
+    newArr.push(str[i].length);
+    sum += newArr[i];
+  }
+  return sum;
+}
 
 /* #convertToArray
  *
